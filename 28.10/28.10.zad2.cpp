@@ -1,4 +1,4 @@
-// 28.10.zad2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// 28.10.zadd2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -6,18 +6,18 @@ using namespace std;
 
 int main()
 {
-	int n,a,min=0;
+	int n, a, max=-999999;
 	cout << "n: ";
 	cin >> n;
 	for (int i = 0; i <= n; i++)
-	{cout << "number: ";
+	{
+		cout << "number: ";
 		cin >> a;
-		if (a < min)min = a;
+		if (a > max && a<0)max = a;
 	}
-	cout << "min: "<<min;
+	cout << "max: " << max;
+
 }
-
-
 
 
 
